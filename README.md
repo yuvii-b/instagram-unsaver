@@ -19,8 +19,16 @@ A Python automation script using Selenium to unsave all your saved Instagram pos
 
 ### 1. Clone the Repository
 
+HTTPS
 ```bash
 git clone https://github.com/yuvii-b/instagram-unsaver.git
+```
+SSH
+```bash
+git clone git@github.com:yuvii-b/instagram-unsaver.git
+```
+Change Directory
+```bash
 cd instagram-unsaver
 ```
 
@@ -61,6 +69,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ### 📬Contact
 
-Made with ❤️ by Yuvi
+Made with ❤️ by Yuvi,
 Drop a star ⭐ if this saved you time!
 Feel free to open issues or PRs with suggestions, bugs, or improvements.
