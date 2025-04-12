@@ -17,7 +17,7 @@ A Python automation script using Selenium to unsave all your saved Instagram pos
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the Repository(HTTPS or SSH)
 
 HTTPS
 ```bash
