@@ -81,16 +81,16 @@ class Unsaver:
 
     def unsave(self):
         print("Total posts to unsave: {}".format(len(self.posts)))
-        # for index, post in enumerate(self.posts):
-        #     self.driver.get(post)
-        #     self.human_sleep(2, 4)
-        #     try:
-        #         save_button = self.driver.find_element(By.CSS_SELECTOR, "svg[aria-label='Remove']").find_element(By.XPATH, "./../..")
-        #         save_button.click()
-        #         print("[{}/{}] Unsaved post: {}".format(index + 1, len(self.posts), post))
-        #     except Exception as e:
-        #         print("[{}/{}]Could not unsave post: {}: {}".format(index + 1, len(self.posts), post, e))
-        #     self.human_sleep(2, 3)
+        for index, post in enumerate(self.posts):
+            self.driver.get(post)
+            self.human_sleep(2, 4)
+            try:
+                save_button = self.driver.find_element(By.CSS_SELECTOR, "svg[aria-label='Remove']").find_element(By.XPATH, "./../..")
+                save_button.click()
+                print("[{}/{}] Unsaved post: {}".format(index + 1, len(self.posts), post))
+            except Exception as e:
+                print("[{}/{}]Could not unsave post: {}: {}".format(index + 1, len(self.posts), post, e))
+            self.human_sleep(2, 3)
 
     def __del__(self):
         self.driver.quit()
