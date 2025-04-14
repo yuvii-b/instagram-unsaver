@@ -96,6 +96,15 @@ class Unsaver:
         self.driver.quit()
 
 def main():
+    print(r"""
+             _           _
+            (_)_ __  ___| |_ __ _       _   _ _ __  ___  __ ___   _____ _ __
+            | | '_ \/ __| __/ _` |_____| | | | '_ \/ __|/ _` \ \ / / _ \ '__|
+            | | | | \__ \ || (_| |_____| |_| | | | \__ \ (_| |\ V /  __/ |
+            |_|_| |_|___/\__\__,_|      \__,_|_| |_|___/\__,_| \_/ \___|_|
+
+                
+    """)
     username = input("Enter Instagram username: ")
     password = input("Enter Instagram password: ")
     bot = Unsaver(username, password)
